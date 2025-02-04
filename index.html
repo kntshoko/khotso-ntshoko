@@ -1,84 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="page-wrapper">
-        
-        <div class="side1">
-            
-            <div class="wrapper">
-                
-                <h1>Developer</h1>
-                <img  class="profile-pic" src="profile-pic.jpg" alt="profile-pic">
-                <h2>Khotso Ntshoko</h2>
-                <p>connect:<a href="#">LinkedIn</a></p>
+  <header class="header">
+    <nav>
+      
+      <ul class="nav-links">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
 
-            </div>
+  <main>
+   
+     <!-- Intro Section -->
+     <section id="intro" class="section">
+      <h1>Khotso Ntshoko</h1>
+      <p>
+        Hi, I'm a Developer based in Johannesburg</p>
+    </section>
 
-            <div class="wrapper">
-
-                <h1>Work history</h1>
-                <ul class="work">
-                    <li><p>First line Application Support Intern</p></li>
-                    <li><p>Cloud Hosting and Security Intern</p></li>
-                </ul>
-
-            </div>
-
-            <div class="wrapper">
-
-                <h1>Skills</h1>
-                <ul class="work">
-                    <li><p>Python</p></li>
-                    <li><p>JavaScript</p></li>
-                </ul>
-
-            </div>
-
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Project One</h3>
+          <p>Built with Angular and .NET Core. A dynamic dashboard for analytics.</p>
         </div>
-
-        <div class="side2">
-
-            <div class="wrapper">
-
-                <h1>About me</h1>
-                <p>I enjoy problem-solving and the process 
-                    of finding the solution, the tools 
-                    that I think are the best to 
-                    use are a pen, marker, paper 
-                    and/or whiteboard. The ability 
-                    to design/draw a flowchart helps 
-                    me in visualizing and arranging 
-                    the path to the solution.
-
-                    The process I have undertaken to 
-                    upgrade myself in the IT field is 
-                    to be a Certified AWS Cloud 
-                    Practitioner and I am on the 
-                    journey of becoming a Docker 
-                    Certified Associate.</p>
-
-            </div>
-
-            <div class="wrapper">
-
-                <h1>Projects</h1>
-                <ul class="work">
-                    <li class="cards"><p>To Do list App</p></li>
-                    <li class="cards"><p>Application Support</p></li>
-                </ul>
-
-            </div>
-
+        <div class="project-item">
+          <h3>Project Two</h3>
+          <p>Cross-platform app using MAUI for managing tasks efficiently.</p>
         </div>
+        <div class="project-item">
+          <h3>Project Three</h3>
+          <p>A beautiful mobile e-commerce application built using Flutter.</p>
+        </div>
+      </div>
+    </section>
 
-    </div>
+     <!-- About Section -->
+     <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm a skilled developer specializing in Angular, C#, MAUI, and Flutter. 
+        I build scalable web and mobile applications with a passion for clean code and great user experiences.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Developer Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
