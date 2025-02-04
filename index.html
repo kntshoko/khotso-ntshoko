@@ -6,6 +6,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  :root {
+    --background: #ffffff;
+    --text-color: #333333;
+  }
+  
+  [data-theme='dark'] {
+    --background: #333333;
+    --text-color: #ffffff;
+  }
+  
+  .header {
+    background: var(--background);
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro{
+    display: flex;
+    padding: 1rem;
+  }
+  .nav-links {
+   
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .project-item {
+    background: var(--background);
+    border: 1px solid var(--text-color);
+    padding: 1rem;
+    width: 250px;
+    transition: transform 0.3s;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 60%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--text-color);
+  }
+  
+  .contact-form button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--text-color);
+    color: var(--background);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--background);
+    color: var(--text-color);
+  }
+  </style>
 </head>
 <body>
   <header class="header">
